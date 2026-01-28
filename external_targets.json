@@ -5,7 +5,14 @@
   },
   {
     "targets": ["vmalert:8880"],
-    "labels": {"job": "vmalert"}
+    "labels": {"job": "vmalert"},
+    "metric_relabel_configs": [
+      {
+        "source_labels": ["__name__"],
+        "regex": "flag",
+        "action": "drop"
+      }
+    ]
   },
   {
     "targets": ["vminsert-1:8480", "vminsert-2:8480"],

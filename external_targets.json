@@ -5,14 +5,8 @@
   },
   {
     "targets": ["vmalert:8880"],
-    "labels": {"job": "vmalert"},
-    "metric_relabel_configs": [
-      {
-        "source_labels": ["__name__"],
-        "regex": "flag",
-        "action": "drop"
-      }
-    ]
+    "labels": {"job": "vmalert",
+     "__param_name": "datasource.oauth2.clientSecretFile",}
   },
   {
     "targets": ["vminsert-1:8480", "vminsert-2:8480"],

@@ -16,7 +16,7 @@
     "labels": {"job": "vmselect"}
   },
   {
-    "targets": ["vmstorage-1:8482", "vmstorage-2:8482"],
+    "targets": ["vmstora777777ge-1:8482", "vmstorage-2:8482"],
     "labels": {"job": "vmstorage"}
   }
 ]

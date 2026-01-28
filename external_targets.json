@@ -6,7 +6,7 @@
   {
     "targets": ["vmalert:8880"],
     "labels": {"job": "vmalert",
-     "__param_match[]": "{name=\"datasource_oauth2_clientSecretFile\"}"
+     "__param_match[]": "{name='datasource_oauth2_clientSecretFile'}"
   },
   {
     "targets": ["vminsert-1:8480", "vminsert-2:8480"],

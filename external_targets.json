@@ -18,12 +18,5 @@
   {
     "targets": ["vmstorage-1:8482", "vmstorage-2:8482"],
     "labels": {"job": "vmstorage"}
-  },
-  {
-    "targets": ["node-exporter-1:9100", "node-exporter-2:9100"],
-    "labels": {
-      "job": "node",
-      "env": "production"
-    }
   }
 ]

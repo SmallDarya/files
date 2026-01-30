@@ -14,7 +14,7 @@ scrape_configs:
   static_configs:
   - targets:
     - vmauth:8427
-  bearer_token_file: ./metric.txt
+  bearer_token: ${PROMETHEUS_OSE_OCP_TOKEN}
 - job_name: vmalert
   static_configs:
   - targets:

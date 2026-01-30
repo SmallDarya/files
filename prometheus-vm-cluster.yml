@@ -8,7 +8,7 @@ scrape_configs:
     - vmagent:8429
   metric_relabel_configs:
   - source_labels: [name]
-    regex: 'n.*'
+    regex: 'b.*'
     action: drop
 - job_name: vmauth
   static_configs:

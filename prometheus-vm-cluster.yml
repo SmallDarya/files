@@ -41,5 +41,5 @@ scrape_configs:
     - '{__name__=~"go.*"}'
   static_configs:
   - targets:
-    - localhost:9090
+    - prometheus:9090
   

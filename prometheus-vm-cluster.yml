@@ -39,4 +39,5 @@ scrape_configs:
   static_configs:
   - targets:
     - prometheus:9090
+    
   

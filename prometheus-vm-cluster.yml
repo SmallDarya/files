@@ -34,3 +34,12 @@ scrape_configs:
   - targets:
     - vmstorage-1:8482
     - vmstorage-2:8482
+- job_name: federate
+  metrics_path: /federate
+  params:
+    match[]:
+    - '{__name__=~"go.*"}'
+  static_configs:
+  - targets:
+    - localhost:9090
+  

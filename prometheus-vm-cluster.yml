@@ -36,6 +36,9 @@ scrape_configs:
     - vmstorage-2:8482
 - job_name: federate
   metrics_path: /federate
+  params:
+    match[]:
+    - '{__name__=~"go.*"}'
   static_configs:
   - targets:
     - prometheus:9090

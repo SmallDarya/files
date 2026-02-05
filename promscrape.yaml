@@ -26,9 +26,7 @@ scrape_configs:
     - vminsert-2:8480
 - job_name: vmselect
   static_configs:
-  - targets:
-    - vmselect-1:8481
-    - vmselect-2:8481
+  - targets:[]
 - job_name: vmstorage
   static_configs:
   - targets:
